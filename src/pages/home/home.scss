@@ -1,3 +1,21 @@
 page-home {
+    ion-content {
+        background-image: url('../assets/imgs/harry-potter-w.jpg');
+        width: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
 
+        .bottom {
+            position: fixed;
+            left: 0;
+            bottom: 15px;
+            right: 0;
+        }
+
+        .text {
+            color:white;
+            font-size: 16px;
+        }
+    }
 }

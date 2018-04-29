@@ -1,0 +1,21 @@
+page-sorting-hat {
+
+    .house-content {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .house-text {      
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        border: 2px dashed #f69c55;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+}
