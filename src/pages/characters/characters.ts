@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import { HarryPotterServiceProvider } from '../../providers/harry-potter-service/harry-potter-service';
 
 /**
@@ -19,8 +19,12 @@ export class CharactersPage {
   characters: any;
 
   constructor(public navCtrl: NavController, 
-              public navParams: NavParams,
-              public potterService: HarryPotterServiceProvider) {
+    public navParams: NavParams,
+    public potterService: HarryPotterServiceProvider) {
+  }
+
+  public onClickCancel() {
+    this.navCtrl.parent.viewCtrl.dismiss();
   }
 
   ionViewDidLoad() {
@@ -32,7 +36,7 @@ export class CharactersPage {
       (error) => {
         console.log(error);
       }
-    )
+    );
   }
 
 }

@@ -21,7 +21,9 @@ import { HarryPotterServiceProvider } from '../providers/harry-potter-service/ha
   imports: [
     BrowserModule,
     HttpClientModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      backButtonText: ''
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [

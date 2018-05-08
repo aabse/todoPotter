@@ -16,6 +16,10 @@ export class HousesPage {
               public potterService: HarryPotterServiceProvider) {
   }
 
+  public onClickCancel() {
+    this.navCtrl.parent.viewCtrl.dismiss();
+  }
+
   ionViewDidLoad() {
     this.potterService.getHouses()
     .subscribe(
